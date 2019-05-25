@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SmartCasherProject.Entities.UsersManagmentEntities
 {
     
-    class User
+    public class User
     {
         [Key]
         public long id { get; set; }

@@ -1,4 +1,3 @@
-C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.csprojAssemblyReference.cache
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\MainWindow.g.cs
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\App.g.cs
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject_MarkupCompile.cache
@@ -21,3 +20,4 @@ C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Deb
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.Init.resources
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.users_groups_added.resources
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.permission_added.resources
+C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.group_and_module.resources

@@ -9,12 +9,14 @@ using System.Data.Entity;
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities
 {
-    class UserGroup
+    public class UserGroup
     {
         [Key]
         public int id { get; set; }
         public string groupName { get; set; }
         public string groupDescription { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<User> users { get; set; }
+        public ICollection<GroupPermission> permissions { get; set; }
+
     }
 }

@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities
 {
-    public class UserPermission
+    public class GroupPermission
     {
         [Key]
         public long id { get; set; }
-        public bool delete {get; set;}
-        public bool create {get; set;}
-        public bool edit {get; set;}
-        public bool read {get; set;}
+        public bool delete { get; set; }
+        public bool create { get; set; }
+        public bool edit { get; set; }
+        public bool read { get; set; }
 
-        [ForeignKey("user")]
-        public long userId { get; set; }
-        public User user { get; set; }
+        [ForeignKey("group")]
+        public int groupId { get; set; }
+        public UserGroup group { get; set; }
 
         [ForeignKey("module")]
         public int moduleId { get; set; }
