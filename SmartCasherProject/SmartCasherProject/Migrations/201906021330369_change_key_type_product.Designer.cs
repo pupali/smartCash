@@ -7,13 +7,13 @@ namespace SmartCasherProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class permission_added : IMigrationMetadata
+    public sealed partial class change_key_type_product : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(permission_added));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(change_key_type_product));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905240829531_permission_added"; }
+            get { return "201906021330369_change_key_type_product"; }
         }
         
         string IMigrationMetadata.Source

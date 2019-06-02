@@ -7,19 +7,21 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.ObjectModel;
+using SmartCasherProject.Entities.PurchaseManagmentEntities;
 
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities
+    
 {
     
-    public class User
+    public class User : IEntityDates
     {
         [Key]
         public long id { get; set; }
 
-        public DateTime createdAt{get; set;}
-        public DateTime updatedAt{get; set;}
-        public DateTime DeletedAt { get; set; }
+        public DateTime createdAt { get; set; } = DateTime.Now;
+        public DateTime updatedAt { get; set; } = DateTime.Now;
+        public DateTime? deletedAt { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string nickName{get; set;}
@@ -29,7 +31,6 @@ namespace SmartCasherProject.Entities.UsersManagmentEntities
         public string password { get; set; }
         public bool isAdmin { get; set; }
         
-
       
         public ObservableCollection<UserPermission> permissions { get; set; }
 

@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -72,6 +73,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Entities\PurchaseManagmentEntities\ProductPrice.cs" />
+    <Compile Include="Entities\PurchaseManagmentEntities\ProductUnit.cs" />
+    <Compile Include="Entities\PurchaseManagmentEntities\ProductCatagory.cs" />
+    <Compile Include="Entities\PurchaseManagmentEntities\Product.cs" />
     <Compile Include="Entities\SmartCashContext.cs" />
     <Compile Include="Entities\UsersManagmentEntities\GroupPermission.cs" />
     <Compile Include="Entities\UsersManagmentEntities\Module.cs" />
@@ -84,21 +89,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201905240653276_Init.cs" />
-    <Compile Include="Migrations\201905240653276_Init.Designer.cs">
-      <DependentUpon>201905240653276_Init.cs</DependentUpon>
+    <Compile Include="Migrations\201906021326480_initial.cs" />
+    <Compile Include="Migrations\201906021326480_initial.Designer.cs">
+      <DependentUpon>201906021326480_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905240724542_users_groups_added.cs" />
-    <Compile Include="Migrations\201905240724542_users_groups_added.Designer.cs">
-      <DependentUpon>201905240724542_users_groups_added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905240829531_permission_added.cs" />
-    <Compile Include="Migrations\201905240829531_permission_added.Designer.cs">
-      <DependentUpon>201905240829531_permission_added.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905250813581_group_and_module.cs" />
-    <Compile Include="Migrations\201905250813581_group_and_module.Designer.cs">
-      <DependentUpon>201905250813581_group_and_module.cs</DependentUpon>
+    <Compile Include="Migrations\201906021330369_change_key_type_product.cs" />
+    <Compile Include="Migrations\201906021330369_change_key_type_product.Designer.cs">
+      <DependentUpon>201906021330369_change_key_type_product.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -114,17 +111,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201905240653276_Init.resx">
-      <DependentUpon>201905240653276_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906021326480_initial.resx">
+      <DependentUpon>201906021326480_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905240724542_users_groups_added.resx">
-      <DependentUpon>201905240724542_users_groups_added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905240829531_permission_added.resx">
-      <DependentUpon>201905240829531_permission_added.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905250813581_group_and_module.resx">
-      <DependentUpon>201905250813581_group_and_module.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906021330369_change_key_type_product.resx">
+      <DependentUpon>201906021330369_change_key_type_product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

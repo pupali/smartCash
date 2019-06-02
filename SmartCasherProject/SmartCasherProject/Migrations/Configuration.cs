@@ -6,6 +6,7 @@ namespace SmartCasherProject.Migrations
     using System.Linq;
     using SmartCasherProject.Entities.UsersManagmentEntities;
     using SmartCasherProject.Entities;
+    using SmartCasherProject.Entities.PurchaseManagmentEntities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<SmartCashContext>
     {
@@ -18,17 +19,32 @@ namespace SmartCasherProject.Migrations
         {
             context.Users.AddOrUpdate(new User()
             {
-                nickName = "name",
-                lastName = "name2",
-                firstName = "name3",
-                address = "address",
-                description = "description jkfhjkw",
-                password = "password",
-                createdAt = DateTime.Now,
-                updatedAt = DateTime.Now,
-                DeletedAt = DateTime.Now,
-                group = new UserGroup() { groupDescription = "desc", groupName = "test" }
+                firstName = "ali",
+                lastName = "ali",
+                isAdmin = true,
+                password = "password"
+
             });
+
+            context.Products.AddOrUpdate(new Product()
+            {
+                productName = "product1",
+
+            });
+
+            //context.Users.AddOrUpdate(new User()
+            //{
+            //    nickName = "name",
+            //    lastName = "name2",
+            //    firstName = "name3",
+            //    address = "address",
+            //    description = "description jkfhjkw",
+            //    password = "password",
+            //    createdAt = DateTime.Now,
+            //    updatedAt = DateTime.Now,
+            //    deletedAt = DateTime.Now,
+            //    group = new UserGroup() { groupDescription = "desc", groupName = "test" }
+            //});
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
