@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.ObjectModel;
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities
 {
@@ -16,8 +17,8 @@ namespace SmartCasherProject.Entities.UsersManagmentEntities
         public string moduleName { get; set; }
         public string moduleDescription { get; set; }
 
-        public ICollection<UserPermission> permissions { get; set; }
-
-        public ICollection<GroupPermission> groupPermissions { get; set; }
+        public ObservableCollection<UserPermission> permissions { get; set; }
+              
+        public ObservableCollection<GroupPermission> groupPermissions { get; set; }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.ObjectModel;
 
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities
@@ -30,7 +31,7 @@ namespace SmartCasherProject.Entities.UsersManagmentEntities
         
 
       
-        public ICollection<UserPermission> permissions { get; set; }
+        public ObservableCollection<UserPermission> permissions { get; set; }
 
 
         [ForeignKey("group")]
