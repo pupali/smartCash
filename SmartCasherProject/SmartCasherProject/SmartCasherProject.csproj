@@ -73,11 +73,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Entities\PurchaseManagmentEntities\ProductPrice.cs" />
-    <Compile Include="Entities\PurchaseManagmentEntities\ProductUnit.cs" />
-    <Compile Include="Entities\PurchaseManagmentEntities\ProductCatagory.cs" />
-    <Compile Include="Entities\PurchaseManagmentEntities\Product.cs" />
+    <Compile Include="Entities\ProductManagmentEntities\ProductUnit.cs" />
+    <Compile Include="Entities\ProductManagmentEntities\ProductCatagory.cs" />
+    <Compile Include="Entities\ProductManagmentEntities\Product.cs" />
     <Compile Include="Entities\SmartCashContext.cs" />
+    <Compile Include="Entities\StorageManagmentEntities\StoredProduct.cs" />
+    <Compile Include="Entities\StorageManagmentEntities\Storage.cs" />
+    <Compile Include="Entities\SuppliersManagmentEntities\PurchaseRecipt.cs" />
+    <Compile Include="Entities\SuppliersManagmentEntities\Supplier.cs" />
     <Compile Include="Entities\UsersManagmentEntities\GroupPermission.cs" />
     <Compile Include="Entities\UsersManagmentEntities\Module.cs" />
     <Compile Include="Entities\UsersManagmentEntities\UserPermission.cs" />
@@ -96,6 +99,10 @@
     <Compile Include="Migrations\201906021330369_change_key_type_product.cs" />
     <Compile Include="Migrations\201906021330369_change_key_type_product.Designer.cs">
       <DependentUpon>201906021330369_change_key_type_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906101628181_suppliers_and_storages.cs" />
+    <Compile Include="Migrations\201906101628181_suppliers_and_storages.Designer.cs">
+      <DependentUpon>201906101628181_suppliers_and_storages.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -116,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906021330369_change_key_type_product.resx">
       <DependentUpon>201906021330369_change_key_type_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906101628181_suppliers_and_storages.resx">
+      <DependentUpon>201906101628181_suppliers_and_storages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

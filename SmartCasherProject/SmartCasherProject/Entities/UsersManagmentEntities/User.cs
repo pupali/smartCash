@@ -7,7 +7,7 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.ObjectModel;
-using SmartCasherProject.Entities.PurchaseManagmentEntities;
+using SmartCasherProject.Entities.ProductManagmentEntities;
 
 
 namespace SmartCasherProject.Entities.UsersManagmentEntities

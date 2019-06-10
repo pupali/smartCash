@@ -20,3 +20,4 @@ C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Deb
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.csprojAssemblyReference.cache
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.initial.resources
 C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.change_key_type_product.resources
+C:\Users\pupali\Source\Repos\smart\SmartCasherProject\SmartCasherProject\obj\Debug\SmartCasherProject.Migrations.suppliers_and_storages.resources

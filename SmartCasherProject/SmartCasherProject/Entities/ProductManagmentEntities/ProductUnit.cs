@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.ObjectModel;
 
 
-namespace SmartCasherProject.Entities.PurchaseManagmentEntities
+namespace SmartCasherProject.Entities.ProductManagmentEntities
 {
     public class ProductUnit
     {
@@ -19,8 +19,9 @@ namespace SmartCasherProject.Entities.PurchaseManagmentEntities
         public string unitName { get; set; }
         public int unitAmount { get; set; }
         public int unitPrice { get; set; }
+        public int unitAvgPrice { get; set; }
+        public int unitSellingPrice { get; set; }
         public bool defaultUnit { get; set; }
-
 
         [ForeignKey("product")]
         public long productid { get; set; }

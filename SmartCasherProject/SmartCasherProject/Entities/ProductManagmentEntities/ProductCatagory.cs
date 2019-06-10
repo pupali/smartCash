@@ -10,7 +10,7 @@ using System.Collections.ObjectModel;
 
 
 
-namespace SmartCasherProject.Entities.PurchaseManagmentEntities
+namespace SmartCasherProject.Entities.ProductManagmentEntities
 {
    public class ProductCatagory
     {

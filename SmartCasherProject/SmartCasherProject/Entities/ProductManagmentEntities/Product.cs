@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.ObjectModel;
 
-namespace SmartCasherProject.Entities.PurchaseManagmentEntities
+namespace SmartCasherProject.Entities.ProductManagmentEntities
 {
     public class Product : IEntityDates
     {
@@ -18,16 +18,14 @@ namespace SmartCasherProject.Entities.PurchaseManagmentEntities
         public string productName { get; set; }
         public long barCode { get; set; }
         public string productImage { get; set; }
+        public int currentPrice { get; set; }
 
         public DateTime createdAt { get; set; }
         public DateTime updatedAt { get; set; } 
 
-
         [ForeignKey("productCatagory")]
         public int? productCatagoryId { get; set; }
         public ProductCatagory productCatagory { get; set; }
-
-        public ObservableCollection<ProductPrice> prices { get; set; }
 
         public ObservableCollection<ProductUnit> productUnits { get; set; }
     }

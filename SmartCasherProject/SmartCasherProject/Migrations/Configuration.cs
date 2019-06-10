@@ -6,7 +6,7 @@ namespace SmartCasherProject.Migrations
     using System.Linq;
     using SmartCasherProject.Entities.UsersManagmentEntities;
     using SmartCasherProject.Entities;
-    using SmartCasherProject.Entities.PurchaseManagmentEntities;
+    using SmartCasherProject.Entities.ProductManagmentEntities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<SmartCashContext>
     {
